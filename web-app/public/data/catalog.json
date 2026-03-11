@@ -1,0 +1,1354 @@
+{
+  "items": [
+    {
+      "id": "cd-001",
+      "type": "CD",
+      "title": "The Morning Mist",
+      "artists": [
+        "Joe Burke",
+        "Charlie Lennon"
+      ],
+      "description": "Features Joe Burke on accordion and Charlie Lennon on piano. The title track was composed by Joe in 1958. The album features 21 tracks both old and new, recorded at Charlie's Cuan studio at Spiddal in Connemara.",
+      "publisher": "New Century Music",
+      "year": "2002",
+      "image": "cd-001.jpg",
+      "catalogNumber": "689232077563",
+      "tracks": 21,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [
+        "accordion",
+        "piano"
+      ],
+      "genre": [],
+      "links": {
+        "spotify": "https://open.spotify.com/track/0HGKM6v5OUMYes8QYQZf07",
+        "appleMusic": "https://music.apple.com/us/album/morning-mist/302176372"
+      }
+    },
+    {
+      "id": "cd-002",
+      "type": "CD",
+      "title": "Collection",
+      "artists": [
+        "Stockton's Wing"
+      ],
+      "description": "A 20 track compilation of the first three Stockton's Wing albums: Stockton's Wing, Take A Chance, and Light In The Western Sky. Charts the early years from the band's inception in 1977 to their first major success.",
+      "publisher": "Tara Records",
+      "year": "1991",
+      "image": "cd-002.jpg",
+      "catalogNumber": "TARACD4",
+      "tracks": 20,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [],
+      "genre": [
+        "Celtic Folk",
+        "Irish Folk"
+      ],
+      "links": {
+        "spotify": "https://open.spotify.com/album/46D47VX2D7AOVdTxzymUXB"
+      }
+    },
+    {
+      "id": "cd-003",
+      "type": "CD",
+      "title": "The Sligo Style",
+      "artists": [
+        "Various Artists"
+      ],
+      "description": "A compilation focused on Sligo musicians and the traditional Irish fiddle music style associated with the Sligo region. Released by Sound Records, a label specializing in Irish Traditional Music.",
+      "publisher": "Sound Records",
+      "year": "1990s",
+      "image": "cd-003.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [],
+      "genre": [
+        "Irish Traditional",
+        "Fiddle Music"
+      ],
+      "links": {}
+    },
+    {
+      "id": "cd-004",
+      "type": "CD",
+      "title": "In Full Spate",
+      "artists": [
+        "Paddy Glackin",
+        "Donal Lunny"
+      ],
+      "description": "One of Paddy Glackin's seminal recordings featuring Donal Lunny on production and performance. Features traditional compositions arranged by both Glackin and Lunny.",
+      "publisher": "Gael Linn",
+      "year": "1991",
+      "image": "cd-004.jpg",
+      "catalogNumber": "CEFCD 153",
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [
+        "fiddle",
+        "bouzouki",
+        "guitar"
+      ],
+      "genre": [],
+      "links": {
+        "spotify": "https://open.spotify.com/album/21Gnh79xEDFIwl9ACzwepd",
+        "appleMusic": "https://music.apple.com/us/album/in-full-spate/1637063621"
+      }
+    },
+    {
+      "id": "cd-005",
+      "type": "CD",
+      "title": "The Lonesome Touch",
+      "artists": [
+        "Martin Hayes",
+        "Denis Cahill"
+      ],
+      "description": "The first recording together capturing the musical kinship between fiddle master Martin Hayes and guitarist Dennis Cahill. Features 12 tracks of traditional Irish tunes played at a slow tempo with beautiful, creative accompaniment.",
+      "publisher": "Green Linnet",
+      "year": "1997",
+      "image": "cd-005.jpg",
+      "catalogNumber": "GLCD 1181",
+      "tracks": 12,
+      "runtime": "56:45",
+      "discs": null,
+      "format": null,
+      "instruments": [
+        "fiddle",
+        "guitar"
+      ],
+      "genre": [],
+      "links": {
+        "spotify": "https://open.spotify.com/album/608ZQ0B9bYpnfIMmgbIN7w",
+        "appleMusic": "https://music.apple.com/us/album/the-lonesome-touch/265621036"
+      }
+    },
+    {
+      "id": "cd-006",
+      "type": "CD",
+      "title": "Draíocht",
+      "artists": [
+        "Michael Rooney",
+        "June McCormack"
+      ],
+      "description": "Debut recording featuring harp and flute music. Draíocht (dree-ucht) means magic and druidry in Irish. Finished in the Irish Echo's top 20 trad albums for 2004. Michael is a harpist from Monaghan and June is a flutist from Sligo.",
+      "publisher": "Independent",
+      "year": "2004",
+      "image": "cd-006.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [
+        "harp",
+        "flute"
+      ],
+      "genre": [],
+      "links": {
+        "website": "https://www.draiochtmusic.com/"
+      }
+    },
+    {
+      "id": "cd-007",
+      "type": "CD",
+      "title": "Yeh, that's all it is",
+      "artists": [
+        "John Carty"
+      ],
+      "description": "Traditional Celtic music album by John Carty, one of Ireland's best traditional musicians. Features Carty mainly on fiddle backed by guitars, keyboards and banjo, delivering traditional Irish music rooted in the regional styles of Western Ireland.",
+      "publisher": "Shanachie",
+      "year": "2001",
+      "image": "cd-007.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [
+        "fiddle",
+        "tenor banjo",
+        "tenor guitar",
+        "flute"
+      ],
+      "genre": [],
+      "links": {}
+    },
+    {
+      "id": "cd-008",
+      "type": "CD",
+      "title": "The Collection",
+      "artists": [
+        "Luke Kelly"
+      ],
+      "description": "A compilation of studio recordings by legendary Irish folk singer and founding member of The Dubliners. Features Luke Kelly classics including 'Raglan Road', 'Song For Ireland', 'Scorn Not His Simplicity' and 'The Night Visiting Song'.",
+      "publisher": "Outlet Recording",
+      "year": "1999",
+      "image": "cd-008.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [],
+      "genre": [
+        "Irish Folk"
+      ],
+      "links": {
+        "spotify": "https://open.spotify.com/album/4HLAl7nA1j0FHMnuF9o4tW"
+      }
+    },
+    {
+      "id": "cd-009",
+      "type": "CD",
+      "title": "Chapter Eight",
+      "artists": [
+        "Kilfenora Ceili Band",
+        "Don Stiffe"
+      ],
+      "description": "The eighth album from the world renowned Kilfenora Ceili Band featuring Don Stiffe. Features four fiddle players, two flautists, concertina, accordion, banjo, drums, piano, cello and double bass. Embraces both 'the needs of the dancer' and 'the needs of the concert patron'.",
+      "publisher": "Independent",
+      "year": "2012",
+      "image": "cd-009.jpg",
+      "catalogNumber": null,
+      "tracks": 14,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [],
+      "genre": [],
+      "links": {
+        "website": "http://www.kilfenoraceiliband.com/"
+      }
+    },
+    {
+      "id": "cd-010",
+      "type": "CD",
+      "title": "Lá an Dreoilín",
+      "artists": [
+        "Téada"
+      ],
+      "description": "Lá an Dreoilín (Wren Day) features 14 tracks recorded at Grouse Lodge Studios. The band includes Paul Finn on accordion and concertina, Séan McElwain on banjo and bouzouki, Tristan Rosenstock on bodhrán and vocals, Oisín Mac Diarmada on fiddle and vocals, and John Blake on flute and guitar.",
+      "publisher": "Gael Linn",
+      "year": "2004",
+      "image": "cd-010.jpg",
+      "catalogNumber": "CEF 185",
+      "tracks": 14,
+      "runtime": "58:00",
+      "discs": null,
+      "format": null,
+      "instruments": [],
+      "genre": [],
+      "links": {
+        "spotify": "https://open.spotify.com/album/1PC1RqZ4Y1l1uuaK9xRbHr",
+        "appleMusic": "https://music.apple.com/us/album/l%C3%A1-an-dreoil%C3%ADn/1621076356"
+      }
+    },
+    {
+      "id": "cd-011",
+      "type": "CD",
+      "title": "It Was Mighty!",
+      "artists": [
+        "Reg Hall"
+      ],
+      "description": "The Early Days of Irish music in London - Volume 29 in the Voice of the People series from Topic Records. A 3-CD set featuring over 100 vital performances compiled by Dr. Reg Hall. Documents Irish musicians from rural Ireland who found themselves in London in the 1950s.",
+      "publisher": "Topic Records",
+      "year": "2015",
+      "image": "cd-011.jpg",
+      "catalogNumber": "TSCD679T",
+      "tracks": "100+",
+      "runtime": null,
+      "discs": 3,
+      "format": null,
+      "instruments": [],
+      "genre": [],
+      "links": {
+        "website": "https://www.topicrecords.co.uk/2016/02/tscd679t-it-was-mighty-the-early-days-of-irish-music-in-london/"
+      }
+    },
+    {
+      "id": "cd-012",
+      "type": "CD",
+      "title": "More Irish Songs We Learned at School",
+      "artists": [
+        "John Spillane"
+      ],
+      "description": "Follow-up to the successful 'Irish Songs We Learned At School' featuring 13 tracks of traditional Irish folk songs. Features guest appearances by Christy Moore and Seán Ó Sé, and includes students of Coláiste Choilm and GaelCholáiste Choilm, Ballincollig, Co Cork.",
+      "publisher": "EMI",
+      "year": "2009",
+      "image": "cd-012.jpg",
+      "catalogNumber": "CDJS4",
+      "tracks": 13,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [],
+      "genre": [],
+      "links": {}
+    },
+    {
+      "id": "cd-013",
+      "type": "CD",
+      "title": "Síimhín Sí",
+      "artists": [
+        "Aoife Granville"
+      ],
+      "description": "Traditional Irish music album by Aoife Granville featuring authentic Irish traditional music performance.",
+      "publisher": "Independent",
+      "year": "2000s",
+      "image": "cd-013.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [],
+      "genre": [],
+      "links": {}
+    },
+    {
+      "id": "cd-014",
+      "type": "CD",
+      "title": "Otherworld",
+      "artists": [
+        "Lúnasa"
+      ],
+      "description": "Lúnasa's second major release and first album released outside of Ireland. Became the fastest-selling album in the history of Green Linnet Records. Named 'Traditional Album of the Year' by Irish Echo and Irish Voice in 1999. Features 11 tracks with traditional Celtic sound incorporating unique techniques.",
+      "publisher": "Green Linnet",
+      "year": "1999",
+      "image": "cd-014.jpg",
+      "catalogNumber": "GLCD 1200",
+      "tracks": 11,
+      "runtime": "42:00",
+      "discs": null,
+      "format": null,
+      "instruments": [],
+      "genre": [],
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/otherworld/264226638"
+      }
+    },
+    {
+      "id": "cd-015",
+      "type": "CD",
+      "title": "Finest",
+      "artists": [
+        "Sean McGuire"
+      ],
+      "description": "Collection of Sean McGuire recordings - The Definitive Collection. Features 18 tracks of traditional Irish tunes including reels, airs, hornpipes, and jigs showcasing Sean McGuire's virtuoso fiddle playing.",
+      "publisher": "Emerald",
+      "year": "2006",
+      "image": "cd-015.jpg",
+      "catalogNumber": "EMCD8000",
+      "tracks": 18,
+      "runtime": "67:00",
+      "discs": null,
+      "format": null,
+      "instruments": [
+        "fiddle"
+      ],
+      "genre": [],
+      "links": {}
+    },
+    {
+      "id": "cd-016",
+      "type": "CD",
+      "title": "The Mountain Road",
+      "artists": [
+        "Various Artists",
+        "Peter Horan",
+        "Gregory Daly",
+        "PJ Hernon",
+        "Paddy Ryan",
+        "Ted McGowan",
+        "Colm O'Donnell"
+      ],
+      "description": "Compilation of tunes popular in South Sligo - the fourth recording under the Coleman Heritage label. Features almost 20 different musicians, mostly flute and fiddle players, playing their individual versions of tunes in natural settings including famous music pubs in the area.",
+      "publisher": "Coleman Heritage Centre",
+      "year": "1999",
+      "image": "cd-016.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [],
+      "genre": [],
+      "links": {
+        "website": "https://www.colemanirishmusic.com/shop/cds/the-mountain-road-cd/"
+      }
+    },
+    {
+      "id": "cd-017",
+      "type": "CD",
+      "title": "The Story So Far...",
+      "artists": [
+        "Lúnasa"
+      ],
+      "description": "The seventh album by Lúnasa - a best-of compilation with representative recordings from the band's first eleven years. Features 16 songs including re-recorded and remixed tracks. Includes expansive liner notes on the band's history and an extensive photo journal.",
+      "publisher": "Compass Records",
+      "year": "2008",
+      "image": "cd-017.jpg",
+      "catalogNumber": null,
+      "tracks": 16,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [],
+      "genre": [],
+      "links": {
+        "spotify": "https://open.spotify.com/album/2nv8ZeGRDQXKnC7DPXMgKc"
+      }
+    },
+    {
+      "id": "cd-018",
+      "type": "CD",
+      "title": "From Stage to Stage",
+      "artists": [
+        "Dervish"
+      ],
+      "description": "Celebration of 21 years - a collectable CD/DVD companion set showcasing two great concerts from stages on opposite sides of the globe (Sebastopol CA and Sligo). Features guest appearances from Väsen, Mike Marshall, Martin Hayes, Dennis Cahill, Ron Sexsmith, and Duke Special.",
+      "publisher": "Whirling Discs",
+      "year": "2010",
+      "image": "cd-018.jpg",
+      "catalogNumber": "WHRL 014",
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": "CD + DVD",
+      "instruments": [],
+      "genre": [],
+      "links": {
+        "website": "https://www.dervish.ie/from-stage-to-stage"
+      }
+    },
+    {
+      "id": "cd-019",
+      "type": "CD",
+      "title": "Shannon's Lovely Vale",
+      "artists": [
+        "Shannonvale Ceili Band"
+      ],
+      "description": "Traditional Irish ceili band music from the Shannonvale Ceili Band, continuing the proud tradition of Irish dance and traditional music.",
+      "publisher": "Independent",
+      "year": "2013",
+      "image": "cd-019.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [],
+      "genre": [],
+      "links": {}
+    },
+    {
+      "id": "cd-020",
+      "type": "CD",
+      "title": "The Leitrim Equation 3",
+      "artists": [
+        "Seamus Begley",
+        "John Carty",
+        "Donal Lunny"
+      ],
+      "description": "The third CD in a series which evolved from Leitrim County Council's decision to invite well-known musicians to spend time in the county exploring its musical traditions. Features 18 songs celebrating the musical dialects of Leitrim. Includes many Leitrim guests.",
+      "publisher": "Leitrim Co Co",
+      "year": "2013",
+      "image": "cd-020.jpg",
+      "catalogNumber": null,
+      "tracks": 18,
+      "runtime": "61:00",
+      "discs": null,
+      "format": null,
+      "instruments": [
+        "accordion",
+        "fiddle",
+        "banjo",
+        "bouzouki",
+        "guitar",
+        "vocals"
+      ],
+      "genre": [],
+      "links": {
+        "spotify": "https://open.spotify.com/album/6kluqhGberMuAfOMrcbMhh",
+        "appleMusic": "https://music.apple.com/gb/album/leitrim-equation-3/768341177",
+        "website": "https://www.leitrimequation.ie/"
+      }
+    },
+    {
+      "id": "cd-021",
+      "type": "CD",
+      "title": "The Man from Clare",
+      "artists": [
+        "Micho Russell"
+      ],
+      "description": "Features Micho Russell (1915-1994), the legendary tin whistle player from Doonagore, Doolin, County Clare. Known for his minimal ornamentation and foot-tapping style. Won the All-Ireland tin whistle competition in 1973.",
+      "publisher": "GTD Heritage",
+      "year": "1993",
+      "image": "cd-021.jpg",
+      "catalogNumber": "TRD CD 011",
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["tin whistle", "uilleann pipes"],
+      "genre": ["Irish Traditional", "Clare Style"],
+      "links": {}
+    },
+    {
+      "id": "cd-022",
+      "type": "CD",
+      "title": "The Star Above the Garter",
+      "artists": [
+        "Denis Murphy",
+        "Julia Clifford"
+      ],
+      "description": "Celebrated Irish traditional fiddle album featuring brother and sister Denis Murphy and Julia Clifford from Sliabh Luachra. Just the two siblings' brilliant fiddles with no other accompaniment. Often ranked as the best Irish traditional fiddle duet album of all time.",
+      "publisher": "Claddagh Records",
+      "year": "1969",
+      "image": "cd-022.jpg",
+      "catalogNumber": "CC5",
+      "tracks": 20,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle"],
+      "genre": ["Irish Traditional", "Sliabh Luachra", "Fiddle"],
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/the-star-above-the-garter/1573284112"
+      }
+    },
+    {
+      "id": "cd-023",
+      "type": "CD",
+      "title": "The Gold Ring",
+      "artists": [
+        "Willie Clancy"
+      ],
+      "description": "2-CD set with 65 tracks, over 2.5 hours of Willie Clancy's piping from a period of over twenty years. Willie Clancy (1918-73) was an iconic figure in Irish music from Miltown Malbay, Co. Clare. Selected by RTÉ radio presenter Peter Browne from RTÉ Libraries and Archives.",
+      "publisher": "RTÉ",
+      "year": "2009",
+      "image": "cd-023.jpg",
+      "catalogNumber": "RTÉ 276CD",
+      "tracks": 65,
+      "runtime": null,
+      "discs": 2,
+      "format": null,
+      "instruments": ["uilleann pipes"],
+      "genre": ["Irish Traditional", "Uilleann Pipes", "Clare"],
+      "links": {}
+    },
+    {
+      "id": "cd-024",
+      "type": "CD",
+      "title": "Concertina Music from West Clare",
+      "artists": [
+        "Elizabeth Crotty"
+      ],
+      "description": "31 tracks recorded by Ciaran Mac Mathuna in 1955 and 1960. Extensive remastering work by Harry Bradshaw in the RTÉ archives. Mrs. Crotty's lovely concertina playing features largely solo but occasionally in company with Paddy Canny, Denis Murphy, and Michael Tubridy.",
+      "publisher": "RTÉ",
+      "year": "2004",
+      "image": "cd-024.jpg",
+      "catalogNumber": "RTE 225 CD",
+      "tracks": 31,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["concertina"],
+      "genre": ["Irish Traditional", "Concertina", "West Clare"],
+      "links": {}
+    },
+    {
+      "id": "cd-025",
+      "type": "CD",
+      "title": "Journeyman",
+      "artists": [
+        "Gerry O'Connor"
+      ],
+      "description": "Features long forgotten tunes from Gerry's home area in the North East of Ireland. Counted in the top five Albums of the year 2004 by the Irish Times. Gerry 'Fiddle' O'Connor from Dundalk, County Louth, founding member of Skylark and La Lúgh.",
+      "publisher": "Lughnasa Music",
+      "year": "2004",
+      "image": "cd-025.jpg",
+      "catalogNumber": "LM 001",
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle", "piano", "guitar", "accordion", "bodhrán"],
+      "genre": ["Irish Traditional", "Fiddle"],
+      "links": {
+        "bandcamp": "https://gerryoconnor.bandcamp.com/album/journeyman"
+      }
+    },
+    {
+      "id": "cd-026",
+      "type": "CD",
+      "title": "Farewell to Ireland",
+      "artists": [
+        "Various Artists"
+      ],
+      "description": "Four-CD set of Irish music recorded in New York in the 1920s and 1930s, compiled by Ron Kavana. The body of music is regarded by many as the lost treasure of the golden age of traditional Irish music. Features Michael Coleman, James Morrison, Paddy Killoran, and many others.",
+      "publisher": "Proper Records",
+      "year": "2005",
+      "image": "cd-026.jpg",
+      "catalogNumber": null,
+      "tracks": 80,
+      "runtime": null,
+      "discs": 4,
+      "format": null,
+      "instruments": ["fiddle", "uilleann pipes", "accordion"],
+      "genre": ["Irish Traditional", "Historical", "Irish-American"],
+      "links": {}
+    },
+    {
+      "id": "cd-027",
+      "type": "CD",
+      "title": "From Ballymote to Brooklyn",
+      "artists": [
+        "Paddy Killoran",
+        "James Morrison"
+      ],
+      "description": "Collection of vintage recordings by these two great Sligo fiddlers, among the most influential artists in Irish music at the dawn of recording. Tracks remastered by Gregory Daly and P.J. Hernon. Paddy Killoran plays on tracks 1-14, James Morrison on tracks 15-24.",
+      "publisher": "Coleman Centre",
+      "year": "2002",
+      "image": "cd-027.jpg",
+      "catalogNumber": "CHC 007",
+      "tracks": 24,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle"],
+      "genre": ["Irish Traditional", "Sligo Style", "Historical"],
+      "links": {}
+    },
+    {
+      "id": "cd-028",
+      "type": "CD",
+      "title": "60th Anniversary Celebration",
+      "artists": [
+        "The Tulla Céilí Band"
+      ],
+      "description": "Recorded in June 2006 to mark the Band's 60th Anniversary. Serves as a tribute to band founders J. Joe Hayes and Francie Donnellan. The Tulla Céilí Band is one of the finest céilí bands in the country.",
+      "publisher": "Ceirníní Cladaigh",
+      "year": "2006",
+      "image": "cd-028.jpg",
+      "catalogNumber": null,
+      "tracks": 16,
+      "runtime": "48:00",
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle", "flute", "accordion", "piano", "drums"],
+      "genre": ["Irish Traditional", "Céilí Band"],
+      "links": {
+        "spotify": "https://open.spotify.com/album/0P8qcHkB5jGAQgZLkfFtjD",
+        "appleMusic": "https://music.apple.com/us/album/60th-anniversary-celebration/1573283760"
+      }
+    },
+    {
+      "id": "cd-029",
+      "type": "CD",
+      "title": "Sing us a song Paddy",
+      "artists": [
+        "Paddy Berry"
+      ],
+      "description": "Paddy Berry (born October 12, 1937) is an Irish traditional singer from Wexford, Ireland. Renowned as one of the most respected ballad singers and songwriters of his generation and a great collector of folklore and song. Received a special lifetime achievement award from President Mary McAleese in 2003.",
+      "publisher": "",
+      "year": "",
+      "image": "cd-029.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["vocals"],
+      "genre": ["Irish Traditional", "Ballad Singing", "Songs"],
+      "links": {}
+    },
+    {
+      "id": "cd-030",
+      "type": "CD",
+      "title": "Caipíní",
+      "artists": [
+        "Various Artists from West Kerry"
+      ],
+      "description": "74-minute album of traditional songs and music from West Kerry. The title means 'caps' and refers to the time when every man wore such headgear. Originated from a TG4 television programme co-produced by Brendan Begley with Niamh Ní Bhaoill and Philip King in 2000.",
+      "publisher": "Sibéal Teo",
+      "year": "2004",
+      "image": "cd-030.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": "74:00",
+      "discs": null,
+      "format": null,
+      "instruments": ["button accordion", "vocals"],
+      "genre": ["Irish Traditional", "West Kerry", "Songs"],
+      "links": {}
+    },
+    {
+      "id": "cd-031",
+      "type": "CD",
+      "title": "The Floating Bow",
+      "artists": [
+        "John Doherty"
+      ],
+      "description": "Recordings made by Alun Evans between 1968 and 1974 at a farmhouse in Glenconwell, Ardara, County Donegal. These recordings were made when John was at his musical best and are considered some of the most important fiddle tracks in the Irish tradition.",
+      "publisher": "Claddagh Records",
+      "year": "1996",
+      "image": "cd-031.jpg",
+      "catalogNumber": null,
+      "tracks": 25,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle"],
+      "genre": ["Irish Traditional", "Donegal Fiddle"],
+      "links": {}
+    },
+    {
+      "id": "cd-032",
+      "type": "CD",
+      "title": "Mícheál Ó Súilleabháin",
+      "artists": [
+        "Mícheál Ó Súilleabháin"
+      ],
+      "description": "Debut album released when Ó Súilleabháin became a music lecturer at UCC in 1975. Collection of solo interpretations of traditional music on piano, clavichord, harmonium and Moog synthesiser. Mícheál (1950-2018) founded the Irish World Academy of Music and Dance at University of Limerick.",
+      "publisher": "Gael Linn",
+      "year": "1975",
+      "image": "cd-032.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["piano", "clavichord", "harmonium", "synthesiser"],
+      "genre": ["Irish Traditional", "Piano", "Innovative"],
+      "links": {}
+    },
+    {
+      "id": "cd-033",
+      "type": "CD",
+      "title": "Past Masters of Irish Dance Music",
+      "artists": [
+        "Various Artists"
+      ],
+      "description": "Anthology of re-mastered 78 rpm recordings illustrating the rich diversity of Irish dance music played in Ireland, Britain and America in the first half of the twentieth century. Features Patrick Killoran, Seamus Ennis, James Morrison, and others. Edited by Reg Hall.",
+      "publisher": "Topic Records",
+      "year": "2000",
+      "image": "cd-033.jpg",
+      "catalogNumber": "TSCD604",
+      "tracks": 23,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle", "uilleann pipes", "accordion"],
+      "genre": ["Irish Traditional", "Dance Music", "Historical"],
+      "links": {
+        "spotify": "https://open.spotify.com/album/5J67LA5ofoEGruEJMYxrx7"
+      }
+    },
+    {
+      "id": "cd-034",
+      "type": "CD",
+      "title": "Seoltaí Séidte",
+      "artists": [
+        "Various Artists"
+      ],
+      "description": "2-CD set released to commemorate Gael Linn's Golden Jubilee. Compiles all twenty of Gael-Linn's historic 78 rpm discs issued between 1957 to 1961. 43 performances by outstanding solo singers in Irish from Irish-speaking districts and solo musicians. 96-page booklet compiled by Nicholas Carolan.",
+      "publisher": "Gael Linn",
+      "year": "2004",
+      "image": "cd-034.jpg",
+      "catalogNumber": "CEF 184",
+      "tracks": 43,
+      "runtime": null,
+      "discs": 2,
+      "format": null,
+      "instruments": ["fiddle", "flute", "accordion", "uilleann pipes"],
+      "genre": ["Irish Traditional", "Gaeltacht", "Historical"],
+      "links": {}
+    },
+    {
+      "id": "cd-035",
+      "type": "CD",
+      "title": "The Fiddler's Delight",
+      "artists": [
+        "Gerry Clarke",
+        "Emmet Gill"
+      ],
+      "description": "Collection of twenty-four tracks of un-reissued recordings of great traditional Irish fiddle playing from 1921-1945, featuring artists like Hugh Gillespie, James Morrison, Michael Coleman, and Paddy Killoran. 36-page booklet included.",
+      "publisher": "Oldtime Records",
+      "year": "2016",
+      "image": "cd-035.jpg",
+      "catalogNumber": null,
+      "tracks": 24,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle"],
+      "genre": ["Irish Traditional", "Fiddle", "Historical", "78rpm"],
+      "links": {}
+    },
+    {
+      "id": "cd-036",
+      "type": "CD",
+      "title": "The De Cuellar Suite",
+      "artists": [
+        "Michael Rooney"
+      ],
+      "description": "Based on the story of Captain Francisco de Cuéllar, one of the few survivors from the Spanish Armada ships which foundered off Streedagh Strand, Sligo in 1588. Collaboration of Irish Traditional, Galician Traditional and Classical musicians. 11 movements, live recording of premiere featuring over 65 musicians.",
+      "publisher": "Draíocht Music",
+      "year": "2012",
+      "image": "cd-036.jpg",
+      "catalogNumber": null,
+      "tracks": 11,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["multi-instrumental"],
+      "genre": ["Irish Traditional", "Galician", "Classical Fusion"],
+      "links": {
+        "website": "http://www.draiochtmusic.com"
+      }
+    },
+    {
+      "id": "cd-037",
+      "type": "CD",
+      "title": "The Belfast Harp Festival",
+      "artists": [
+        "Gráinne Yeats"
+      ],
+      "description": "Double-CD commemorating the 200th anniversary of the 1792 harpers festival. Contains 22 examples from the repertoire of traditional harpers plus 20 harp solos and songs from Carolan's extensive output. Gráinne Yeats (1925-2013) was one of the first to revive the wire-strung harp.",
+      "publisher": "Gael Linn",
+      "year": "1992",
+      "image": "cd-037.jpg",
+      "catalogNumber": "CEFCD 156",
+      "tracks": 42,
+      "runtime": null,
+      "discs": 2,
+      "format": null,
+      "instruments": ["wire-strung harp"],
+      "genre": ["Irish Traditional", "Harp", "Historical", "Carolan"],
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/the-belfast-harp-festival/1630402591"
+      }
+    },
+    {
+      "id": "cd-038",
+      "type": "CD",
+      "title": "Carolan's Receipt",
+      "artists": [
+        "Derek Bell"
+      ],
+      "description": "Recorded in 1975, the same year Bell joined the Chieftains. One of the first LPs devoted to the music of blind harper Turlough O'Carolan. First recorded performance on the brass wire harp. Features The Chieftains on several tracks.",
+      "publisher": "Ceirníní Cladagh",
+      "year": "1975",
+      "image": "cd-038.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["irish harp", "wire-strung harp"],
+      "genre": ["Irish Traditional", "Harp", "Carolan"],
+      "links": {}
+    },
+    {
+      "id": "cd-039",
+      "type": "CD",
+      "title": "Carolan's Favourite",
+      "artists": [
+        "Derek Bell"
+      ],
+      "description": "Derek Bell's second Carolan album, paying tribute to Turlough O'Carolan (1670-1738). Features Derek joined by The Chieftains and The New Irish Chamber Orchestra.",
+      "publisher": "Claddagh Records",
+      "year": "1979",
+      "image": "cd-039.jpg",
+      "catalogNumber": "CC28",
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["irish harp", "wire-strung harp"],
+      "genre": ["Irish Traditional", "Harp", "Carolan"],
+      "links": {}
+    },
+    {
+      "id": "cd-040",
+      "type": "CD",
+      "title": "Feasting with Carolan",
+      "artists": [
+        "Janet Harbison",
+        "Clarsheree"
+      ],
+      "description": "Turlough O Carolan provided the inspiration and almost all the melodic material for Clarsheree's first album. Clarsheree consisted of Janet Harbison with 4 students. All music arranged and produced by Janet Harbison.",
+      "publisher": "Janet Harbison",
+      "year": "1995",
+      "image": "cd-040.jpg",
+      "catalogNumber": null,
+      "tracks": 11,
+      "runtime": "38:00",
+      "discs": null,
+      "format": null,
+      "instruments": ["harp", "harpsichord", "uilleann pipes", "flute", "whistle", "concertina", "bodhrán"],
+      "genre": ["Irish Traditional", "Harp Ensemble", "Carolan"],
+      "links": {
+        "appleMusic": "https://music.apple.com/au/album/feasting-with-carolan-feat-clarsheree/1671681740"
+      }
+    },
+    {
+      "id": "cd-041",
+      "type": "CD",
+      "title": "Across the Black River",
+      "artists": [
+        "Kevin Burke",
+        "Cal Scott"
+      ],
+      "description": "First release from Loftus Music featuring collaboration between fiddler Kevin Burke and guitarist/composer Cal Scott. Selected by the New York Times as one of the top World Music releases of the year.",
+      "publisher": "Loftusmusic",
+      "year": "2007",
+      "image": "cd-041.jpg",
+      "catalogNumber": "LM 001",
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle", "guitar"],
+      "genre": ["Irish Traditional", "Contemporary"],
+      "links": {
+        "spotify": "https://open.spotify.com/album/0K05nOg2RVefdwnL7RR4Kd",
+        "appleMusic": "https://music.apple.com/us/album/across-the-black-river/251801142"
+      }
+    },
+    {
+      "id": "cd-042",
+      "type": "CD",
+      "title": "Feadóga Stáin",
+      "artists": [
+        "Mary Bergin"
+      ],
+      "description": "Mary Bergin's debut solo album, credited with establishing the tin whistle as one of the first-tier instruments of Irish Traditional Music. Critically cited as outstanding and unequalled, considered a definitive or milestone album. Cited by Joanie Madden as highly influential.",
+      "publisher": "Gael Linn",
+      "year": "1979",
+      "image": "cd-042.jpg",
+      "catalogNumber": "CEF 071",
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["tin whistle", "bouzouki", "mandocello", "bodhrán"],
+      "genre": ["Irish Traditional", "Tin Whistle"],
+      "links": {}
+    },
+    {
+      "id": "cd-043",
+      "type": "CD",
+      "title": "Now She's Purring",
+      "artists": [
+        "Gerry Harrington",
+        "Billy Clifford"
+      ],
+      "description": "Features two virtuosos of Sliabh Luachra music who join together on flute and fiddle. Gerry Harrington and Billy Clifford have had a lifelong affinity with the music of Sliabh Luachra. Billy Clifford helped to define the local flute style. Released July 9, 2018 with fifteen tracks.",
+      "publisher": "Clifford Harrington Music",
+      "year": "2018",
+      "image": "cd-043.jpg",
+      "catalogNumber": null,
+      "tracks": 15,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["flute", "fiddle"],
+      "genre": ["Irish Traditional", "Sliabh Luachra"],
+      "links": {
+        "bandcamp": "https://gerryharrington.bandcamp.com/album/now-shes-purring"
+      }
+    },
+    {
+      "id": "cd-044",
+      "type": "CD",
+      "title": "The Rest is History",
+      "artists": [
+        "Moylurg Ceili Band"
+      ],
+      "description": "Released in 2014 following their All-Ireland title, the Moylurg Céili Band's first CD received plaudits from all quarters of the traditional music world. Launched by RTÉ's Kieran Hanrahan at Kilronan Castle, Co. Roscommon. Features musicians from counties Roscommon, Leitrim, Galway, Sligo, and Donegal.",
+      "publisher": "",
+      "year": "2014",
+      "image": "cd-044.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle", "flute", "concertina", "accordion", "piano", "drums"],
+      "genre": ["Irish Traditional", "Céilí Band"],
+      "links": {}
+    },
+    {
+      "id": "cd-045",
+      "type": "CD",
+      "title": "Santiago",
+      "artists": [
+        "The Chieftains"
+      ],
+      "description": "Album dedicated to traditional music of Galicia, the region in northwest Spain, and adaptation of Galician emigrants' musical folklore in Latin American music. Features collaborations with Carlos Núñez, Linda Ronstadt, Los Lobos, Ry Cooder. Won the 1997 Grammy Award for Best World Music Album.",
+      "publisher": "RCA Victor",
+      "year": "1996",
+      "image": "cd-045.jpg",
+      "catalogNumber": "09026 68602 2",
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["uilleann pipes", "fiddle", "flute", "bodhrán"],
+      "genre": ["Celtic", "Galician", "World Music"],
+      "links": {}
+    },
+    {
+      "id": "cd-046",
+      "type": "CD",
+      "title": "Flatfish",
+      "artists": [
+        "Flook"
+      ],
+      "description": "The second album and debut studio recording by Anglo-Irish celtic music group Flook, released in 1999. Features nine tracks with performers John Joe Kelly (bodhrán), Sarah Allen (flute, whistle, accordion), Brian Finnegan (flute, whistle), and Ed Boyd (guitar, bouzouki, mandolin). Received accolades including 'stunning', 'remarkable' and 'little short of miraculous'.",
+      "publisher": "Flatfish Records",
+      "year": "1999",
+      "image": "cd-046.jpg",
+      "catalogNumber": "Flatfish 002CD",
+      "tracks": 9,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["flute", "whistle", "bodhrán", "guitar", "bouzouki", "accordion"],
+      "genre": ["Irish Traditional", "Celtic Folk"],
+      "links": {}
+    },
+    {
+      "id": "cd-047",
+      "type": "CD",
+      "title": "The Home Ruler",
+      "artists": [
+        "Catherine McEvoy"
+      ],
+      "description": "Released in September 2008, Catherine McEvoy's third album featuring 15 tracks of Sligo-Roscommon style flute playing. Catherine is considered one of the best exponents of this style. Accompanied by Paddy McEvoy, Felix Dolan, Geraldine Cotter, Steve Cooney and Joe Kennedy. Album named after the iconic hornpipe.",
+      "publisher": "Cló Iar-Chonnacht",
+      "year": "2008",
+      "image": "cd-047.jpg",
+      "catalogNumber": null,
+      "tracks": 15,
+      "runtime": "49:00",
+      "discs": null,
+      "format": null,
+      "instruments": ["flute"],
+      "genre": ["Irish Traditional", "Sligo-Roscommon Style"],
+      "links": {
+        "spotify": "https://open.spotify.com/album/7tm1G9IwSqYMOjZsc8bABm",
+        "appleMusic": "https://music.apple.com/us/album/the-home-ruler/292912848"
+      }
+    },
+    {
+      "id": "cd-048",
+      "type": "CD",
+      "title": "Making Tracks",
+      "artists": [
+        "Dartry Ceili Band"
+      ],
+      "description": "The Dartry Céilí Band's second album released in 2014, received excellent reviews throughout the world. The band won the All Ireland Senior Céilí Band competition at Fleadh Cheoil na hÉireann in Tullamore in 2009. The 11-piece band features musicians from North Connacht with Philip Duffy as band leader.",
+      "publisher": "",
+      "year": "2014",
+      "image": "cd-048.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle", "flute", "accordion", "concertina", "piano", "drums"],
+      "genre": ["Irish Traditional", "Céilí Band"],
+      "links": {}
+    },
+    {
+      "id": "cd-049",
+      "type": "CD",
+      "title": "Tús Nua",
+      "artists": [
+        "Gatehouse"
+      ],
+      "description": "Debut album by Gatehouse released September 16, 2016 on Gael Linn. The name means 'Fresh Start'. The group consists of Rachel Garvey (vocals), Jacinta McEvoy (guitar, concertina), John McEvoy (fiddle, mandola), and John Wynne (flute, whistles). Songs and tunes grounded in the North Connaught tradition. Irish Times praised Rachel Garvey's remarkable voice.",
+      "publisher": "Gael Linn",
+      "year": "2016",
+      "image": "cd-049.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["vocals", "fiddle", "flute", "whistle", "concertina", "guitar", "mandola"],
+      "genre": ["Irish Traditional", "North Connaught"],
+      "links": {}
+    },
+    {
+      "id": "cd-050",
+      "type": "CD",
+      "title": "The Past is Another Tune",
+      "artists": [
+        "Coleman Archive Volume 4"
+      ],
+      "description": "Edited by Gregory Daly and released by the Coleman Heritage Centre in 2018. Part of the Coleman Archive series documenting traditional Irish music from the Coleman Irish Music Centre in Gurteen, County Sligo.",
+      "publisher": "Coleman Heritage Centre",
+      "year": "2018",
+      "image": "cd-050.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": [],
+      "genre": ["Irish Traditional", "Archive"],
+      "links": {}
+    },
+    {
+      "id": "cd-051",
+      "type": "CD",
+      "title": "It's not Racket Science",
+      "artists": [
+        "At The Racket"
+      ],
+      "description": "Released September 1, 2008 with thirteen tracks featuring John Carty on fiddle and banjo, Brian McGrath on piano and tenor guitar, Seamus O'Donnell on sax, flute and vocals, and Michael McCague on guitar and bouzouki. Racket Records is an independent family run record label based in northwest Ireland.",
+      "publisher": "Racket Records",
+      "year": "2008",
+      "image": "cd-051.jpg",
+      "catalogNumber": null,
+      "tracks": 13,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle", "banjo", "piano", "flute", "sax", "guitar", "bouzouki"],
+      "genre": ["Irish Traditional"],
+      "links": {
+        "bandcamp": "https://racketrecords.bandcamp.com/album/its-not-racket-science",
+        "appleMusic": "https://music.apple.com/us/album/its-not-racket-science/303720536"
+      }
+    },
+    {
+      "id": "cd-052",
+      "type": "CD",
+      "title": "The Flute Players of Roscommon Volume 2",
+      "artists": [
+        "Various Artists"
+      ],
+      "description": "Produced by John Wynne and released by Feadog Mor productions in 2008. Features Aidan and Breda Shannon, James Carty, Packie Duignan, Michael Anthony Glynn, Finbarr McGreevy, Tom McHale, Liz Wynne, and many other traditional Irish flute players from County Roscommon.",
+      "publisher": "Feadog Mor productions",
+      "year": "2008",
+      "image": "cd-052.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["flute"],
+      "genre": ["Irish Traditional", "Roscommon Style"],
+      "links": {}
+    },
+    {
+      "id": "cd-053",
+      "type": "CD",
+      "title": "Drivin' Leitrim Timber",
+      "artists": [
+        "Dave Sheridan"
+      ],
+      "description": "Released September 1, 2010 with 13 tracks. A 'master-class' in flute playing, all with a strong sympathetic accompaniment. Dave Sheridan is a multi-instrumentalist from Killargue. Hot Press Magazine described his flute playing as having 'a highly accomplished free flowing fluid style'.",
+      "publisher": "",
+      "year": "2010",
+      "image": "cd-053.jpg",
+      "catalogNumber": null,
+      "tracks": 13,
+      "runtime": "49:00",
+      "discs": null,
+      "format": null,
+      "instruments": ["flute", "guitar", "bouzouki", "piano", "bodhrán", "bass", "harmonica"],
+      "genre": ["Irish Traditional", "Flute"],
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/drivin-leitrim-timber/398115341"
+      }
+    },
+    {
+      "id": "cd-054",
+      "type": "CD",
+      "title": "The Raineys",
+      "artists": [
+        "The Raineys"
+      ],
+      "description": "Recordings from the Pavee Point Travellers Centre featuring Paddy and Stephen Rainey on fiddle recorded in Freeney's Pub in Letterfrack, Connemara, in 1956. Sister Brigid sings three songs. The Raineys were Travellers who based themselves in Tuam during winter but toured the fairs and markets of Connemara during summer.",
+      "publisher": "Pavee Point",
+      "year": "2006",
+      "image": "cd-054.jpg",
+      "catalogNumber": "PPCD003",
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle", "vocals"],
+      "genre": ["Irish Traditional", "Traveller Music"],
+      "links": {}
+    },
+    {
+      "id": "cd-055",
+      "type": "CD",
+      "title": "Tuning the Radio",
+      "artists": [
+        "Various Artists"
+      ],
+      "description": "Traditional Folk album released by RTÉ in 2010 featuring 25 songs. The traditional music acetates in the RTÉ collection were transferred to a digitized format. Three recordings from 1940 are included: The Kincora Ceili Band, Seamus Ennis (uilleann pipes), and The Dublin Metropolitan Garda Ceili Band. Largely the work of Peter Browne.",
+      "publisher": "RTÉ",
+      "year": "2010",
+      "image": "cd-055.jpg",
+      "catalogNumber": null,
+      "tracks": 25,
+      "runtime": "79:00",
+      "discs": null,
+      "format": null,
+      "instruments": ["uilleann pipes", "fiddle", "accordion", "flute"],
+      "genre": ["Irish Traditional", "Archive", "Historical"],
+      "links": {
+        "appleMusic": "https://music.apple.com/us/album/tuning-the-radio/458371595"
+      }
+    },
+    {
+      "id": "cd-056",
+      "type": "CD",
+      "title": "Fiddle Music of Donegal Volume 2",
+      "artists": [
+        "Roisin McGrory",
+        "Damian Harrigan"
+      ],
+      "description": "Released in 1997 by Cairdeas Recordings, this volume features fiddle music from County Donegal performed by Roisin McGrory and Damian Harrigan, documenting the distinctive fiddle tradition of the region.",
+      "publisher": "Cairdeas Recordings",
+      "year": "1997",
+      "image": "cd-056.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle"],
+      "genre": ["Irish Traditional", "Donegal Fiddle"],
+      "links": {}
+    },
+    {
+      "id": "cd-057",
+      "type": "CD",
+      "title": "The Torn Jacket",
+      "artists": [
+        "Tommy Guihen"
+      ],
+      "description": "Tommy Guihen's first solo album released in 2017 despite winning the senior all-Ireland flute title in 1978. From Bodorragha, between Keadue and Arigna in north Co. Roscommon. Features reels, jigs, two slow airs, hornpipes and a setting of 'Eleanor Plunkett'. #6 on London Top Ten 2018, #3 on Ennis Top Ten.",
+      "publisher": "Cló Iar-Chonnacht",
+      "year": "2017",
+      "image": "cd-057.jpg",
+      "catalogNumber": "CICD204",
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["flute"],
+      "genre": ["Irish Traditional", "Roscommon/Leitrim/Sligo Style"],
+      "links": {}
+    },
+    {
+      "id": "cd-058",
+      "type": "CD",
+      "title": "Round the House and Mind the Dresser",
+      "artists": [
+        "Various Artists"
+      ],
+      "description": "Compilation of old recordings edited by Reg Hall, released by Topic Records in 2001. Outstanding collection focusing on polkas, slides, flings, hornpipes, mazurkas, waltzes and barndances. One-third from remastered 78s (1925-1950s), balance from 60s-70s recordings. Features Michael Coleman, Johnny Doherty, Johnny O'Leary, and others.",
+      "publisher": "Topic Records",
+      "year": "2001",
+      "image": "cd-058.jpg",
+      "catalogNumber": "TSCD606",
+      "tracks": 28,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle", "accordion", "concertina", "uilleann pipes"],
+      "genre": ["Irish Traditional", "Dance Music", "Historical"],
+      "links": {}
+    },
+    {
+      "id": "cd-059",
+      "type": "CD",
+      "title": "Irish Traditional Music",
+      "artists": [
+        "Michael Tubridy"
+      ],
+      "description": "Three CDs of tunes played slowly and at 'session' tempo recorded by Sarah-Jane Woods, Michael Harrison, Aoife Johnston, Oisín Chambers, Janine Redmond, Niamh Denmead, Emma Woods. Published by Craobh Naithí (Dublin) branch of Comhaltas in 2007. This is a teaching and learning resource for traditional Irish music.",
+      "publisher": "Craobh Naithí (Dublin) branch of Comhaltas",
+      "year": "2007",
+      "image": "cd-059.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": 3,
+      "format": null,
+      "instruments": ["various"],
+      "genre": ["Irish Traditional", "Instructional"],
+      "links": {}
+    },
+    {
+      "id": "cd-060",
+      "type": "CD",
+      "title": "The Blackberry Blossom",
+      "artists": [
+        "Mary MacNamara"
+      ],
+      "description": "Released in 2000 featuring elegant, restrained, soulful concertina playing from East Clare. Mary MacNamara from Tulla is accompanied by Geraldine Cotter, Catherine McEvoy, and Andrew MacNamara. 15 tracks showcasing the East Clare concertina tradition.",
+      "publisher": "Claddagh Records",
+      "year": "2000",
+      "image": "cd-060.jpg",
+      "catalogNumber": null,
+      "tracks": 15,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["concertina"],
+      "genre": ["Irish Traditional", "Concertina", "East Clare"],
+      "links": {
+        "spotify": "https://open.spotify.com/album/16CHFwDqj7TY0ZVMwQ4mU3",
+        "appleMusic": "https://music.apple.com/us/album/the-blackberry-blossom/265621036"
+      }
+    },
+    {
+      "id": "cd-061",
+      "type": "CD",
+      "title": "The Far Side of the Glen",
+      "artists": [
+        "Derek McGinley",
+        "Tara Connaghan"
+      ],
+      "description": "Released in 2011 featuring traditional Irish fiddle music from southwest Donegal. Derek is from Glencolmcille and Tara from Glenties. The title reflects their birthplaces on either side of the Glengesh Pass. Both learned from the late James Byrne of Glencolmcille. Recorded over two days in a cottage near Carrick, County Donegal.",
+      "publisher": "",
+      "year": "2011",
+      "image": "cd-061.jpg",
+      "catalogNumber": null,
+      "tracks": null,
+      "runtime": null,
+      "discs": null,
+      "format": null,
+      "instruments": ["fiddle"],
+      "genre": ["Irish Traditional", "Donegal Fiddle"],
+      "links": {}
+    }
+  ],
+  "metadata": {
+    "totalItems": 61,
+    "type": "CD",
+    "source": "Drumshanbo Local Library",
+    "dataVersion": "2.0",
+    "lastUpdated": "2025-11-04"
+  }
+}

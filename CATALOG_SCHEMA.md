@@ -55,6 +55,7 @@ These fields are included when available, otherwise set to `null` or empty array
 |-------|------|---------|-------------|
 | `catalogNumber` | String \| null | null | Publisher's catalog number |
 | `tracks` | Number \| String \| null | null | Number of tracks (can be number or string like "100+") |
+| `trackList` | Array[String] \| null | null | List of track names (see Track List section) |
 | `runtime` | String \| null | null | Total runtime (format: "MM:SS" or "HH:MM:SS") |
 | `discs` | Number \| null | null | Number of discs (for multi-disc sets) |
 | `format` | String \| null | null | Special format notes (e.g., "CD + DVD") |
@@ -76,6 +77,47 @@ The `links` object contains URLs to external platforms where the album can be fo
 ```
 
 All link fields are optional. Only include links that have been verified.
+
+## Track List Field
+
+The `trackList` field contains an array of track names when available. This field is optional and should only be included when track information has been found through web research.
+
+### Format
+
+```json
+"trackList": [
+  "The Morning Mist / The Bunch of Keys",
+  "The Whistler at the Wake",
+  "Paddy Ryan's Dream"
+]
+```
+
+### Guidelines
+
+- Each track is a string containing the track name
+- For sets/medleys, use " / " to separate tune names within a single track
+- Include the track name as it appears on the album (preserve original formatting)
+- Do not include track numbers - the array index provides ordering
+- Do not include track durations in this field
+- Set to `null` if track listing is not available (do not use empty array)
+- Only populate this field when track information is found during enrichment
+
+### Example with Track List
+
+```json
+{
+  "id": "cd-005",
+  "title": "The Lonesome Touch",
+  "tracks": 12,
+  "trackList": [
+    "The Lonesome Touch",
+    "The Old Favorite / The Ewe with the Crooked Horn",
+    "Paddy Cronin's / Out on the Ocean",
+    "Port na bPúcaí"
+  ],
+  "runtime": "56:45"
+}
+```
 
 ## Artist Parsing Rules
 
@@ -114,6 +156,11 @@ Featured artists mentioned in descriptions or original data are included in the 
   "image": "cd-001.jpg",
   "catalogNumber": "689232077563",
   "tracks": 21,
+  "trackList": [
+    "The Morning Mist / The Bunch of Keys",
+    "The Whistler at the Wake",
+    "Paddy Ryan's Dream"
+  ],
   "runtime": null,
   "discs": null,
   "format": null,
@@ -149,7 +196,10 @@ Featured artists mentioned in descriptions or original data are included in the 
 
 ## Schema Version History
 
-### Version 2.0 (Current)
+### Version 2.1 (Current)
+- Added `trackList` array field for track names
+
+### Version 2.0
 - Added `artists` as array field
 - Added `links` object for external URLs
 - Standardized all optional fields (present in all items)

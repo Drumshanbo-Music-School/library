@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 
 export default function AlbumDetail({ album, onClose, onFilterClick }) {
   const [imageError, setImageError] = useState(false)
+  const [isFlipped, setIsFlipped] = useState(false)
 
   useEffect(() => {
     // Prevent body scroll when modal is open
@@ -11,8 +12,15 @@ export default function AlbumDetail({ album, onClose, onFilterClick }) {
     }
   }, [])
 
+  useEffect(() => {
+    // Reset flip state when album changes
+    setIsFlipped(false)
+    setImageError(false)
+  }, [album.id])
+
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) {
+      setIsFlipped(false)
       onClose()
     }
   }
@@ -30,7 +38,10 @@ export default function AlbumDetail({ album, onClose, onFilterClick }) {
       <div className="bg-white rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         {/* Close Button */}
         <button
-          onClick={onClose}
+          onClick={() => {
+            setIsFlipped(false)
+            onClose()
+          }}
           className="sticky top-4 float-right mr-4 w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-2xl text-slate-600 hover:text-slate-900 z-10"
         >
           ×
@@ -40,22 +51,71 @@ export default function AlbumDetail({ album, onClose, onFilterClick }) {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Album Cover */}
             <div>
-              <div className="aspect-square bg-gradient-to-br from-slate-200 to-slate-300 rounded-lg overflow-hidden shadow-lg">
-                {!imageError ? (
-                  <img
-                    src={`/images/${album.image}`}
-                    alt={album.title}
-                    onError={() => setImageError(true)}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center text-slate-400">
-                    <div className="text-center">
-                      <div className="text-8xl mb-4">💿</div>
-                      <div className="text-lg">No cover available</div>
+              <div
+                className={`flip-card aspect-square ${album.trackList && album.trackList.length > 0 ? 'cursor-pointer' : ''}`}
+                onClick={() => {
+                  if (album.trackList && album.trackList.length > 0) {
+                    setIsFlipped(!isFlipped)
+                  }
+                }}
+              >
+                <div className={`flip-card-inner ${isFlipped ? 'flipped' : ''}`}>
+                  {/* Front - Album Cover */}
+                  <div className="flip-card-front">
+                    <div className="aspect-square bg-gradient-to-br from-slate-200 to-slate-300 rounded-lg overflow-hidden shadow-lg">
+                      {!imageError ? (
+                        <img
+                          src={`/images/${album.image}`}
+                          alt={album.title}
+                          onError={() => setImageError(true)}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-slate-400">
+                          <div className="text-center">
+                            <div className="text-8xl mb-4">💿</div>
+                            <div className="text-lg">No cover available</div>
+                          </div>
+                        </div>
+                      )}
                     </div>
+
+                    {/* Hover Indicator - Only show if trackList exists */}
+                    {album.trackList && album.trackList.length > 0 && (
+                      <div className="flip-indicator">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                    )}
                   </div>
-                )}
+
+                  {/* Back - Track List */}
+                  {album.trackList && album.trackList.length > 0 && (
+                    <div className="flip-card-back">
+                      <div className="aspect-square bg-white rounded-lg shadow-lg p-6 overflow-y-auto">
+                        <h3 className="text-lg font-bold mb-4 text-slate-900">
+                          Track List
+                        </h3>
+                        <ol className="space-y-2">
+                          {album.trackList.map((track, idx) => (
+                            <li key={idx} className="text-sm">
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  handleFilterAndClose('track', track)
+                                }}
+                                className="text-left w-full hover:text-irish-green hover:underline transition-colors py-1"
+                              >
+                                {track}
+                              </button>
+                            </li>
+                          ))}
+                        </ol>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
 
               {/* Streaming Links */}

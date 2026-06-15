@@ -52,7 +52,7 @@ For each item, search the web to find:
 - Instruments featured
 - Genre classification
 - Release year (if missing)
-- Streaming links (Spotify, Bandcamp)
+- Streaming links (Spotify, Bandcamp or Website only)
 - Enhanced 2-4 sentence description
 - Album cover image
 
@@ -65,14 +65,36 @@ For each item, search the web to find:
 2. Check `web-app/public/data/catalog.json` for the last ID (e.g., `cd-061`)
 3. Your batch starts at the next ID (e.g., `cd-062`)
 
-### Phase 2: Process Each Item
-For each row in the CSV:
-1. Parse artists into array format
-2. Perform web searches.
-Important: Make sure to make web searches without spinning new agents. Make a web search for an artist + album in Spotify first, if all of the relavant information including album cover jpg is not found within this first search, then try another source like bandcamp/thesession.org/MusicBrainz. Only after the CD is fully enriched, go to the next entry. If a CD cannot be enriched in 3 web call attempts, write out what you have, and move to the next one. Make sure to extract the album cover jpg and save it within these calls.
-3. Generate enriched JSON entry
-4. Validate against schema
-5. **Append entry to `assets/enriched_batch_cd###-###.json`** (write after each CD is enriched)
+### Phase 2: Process Each Item (CRITICAL: Complete ALL Steps Before Moving to Next CD)                                                                                                        
+                                                                                                                                                                                                
+  For each row in the CSV, you MUST complete these steps in order:                                                                                                                              
+                                                                                                                                                                                                
+  1. **Parse artists** into array format                                                                                                                                                        
+  2. **Perform web search** for metadata (Spotify first, then Bandcamp/theSession.org if needed)                                                                                                   
+     - Extract: track count, track listing, runtime, catalog number, instruments, genre, year, streaming links, description                                                                     
+     - **CRITICAL: In the SAME web search results, locate and note the album cover image URL**                                                                                                  
+  3. **Download album cover image** (REQUIRED - NOT OPTIONAL)                                                                                                                                   
+     - Use the image URL from step 2                                                                                                                                                            
+     - Save to `web-app/public/images/cd-XXX.jpg` where XXX matches the CD ID                                                                                                                   
+     - **VERIFY the file was created** before proceeding                                                                                                                                        
+     - If image download fails, try alternate sources (Bandcamp, MusicBrainz, CoverArtArchive)                                                                                                  
+     - Maximum 3 web search attempts per CD
+
+     - Ignore discogs website since it always returns 403. 
+
+     - If image cannot be found for an album, then touch a jpg file as a placeholder                                                                                                                                                     
+  4. **Generate enriched JSON entry** with all fields                                                                                                                                           
+  5. **Append entry to `assets/enriched_batch_cd###-###.json`** immediately                                                                                                                     
+  6. **Validate completion**: Confirm both JSON entry AND image file exist before moving to next CD                                                                                             
+                                                                                                                                                                                                
+  **STOP CONDITIONS**:                                                                                                                                                                          
+  - Move to next CD only when BOTH metadata JSON AND image file are successfully created                                                                                                        
+  - If after 3 web searches you cannot find complete data, document what's missing in a separate file and move on                                                                               
+  - NEVER process metadata without also attempting image download in the same workflow                                                                                                          
+                                                                                                                                                                                                
+  **EFFICIENCY RULE**:                                                                                                                                                                          
+  Extract the image URL from the same web search you use for metadata. Do not make separate searches for images. Most sources (Spotify, Bandcamp, MusicBrainz) include album art in their       
+  initial results.
 
 ### Phase 3: Finalize
 1. Run `node append-to-catalog.js assets/enriched_batch_cd###-###.json`

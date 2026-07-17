@@ -23,9 +23,9 @@ export default function AlbumCard({ album, onClick, onFilterClick }) {
     >
       {/* Album Cover */}
       <div className="aspect-square bg-gradient-to-br from-slate-200 to-slate-300 relative overflow-hidden">
-        {!imageError ? (
+        {!imageError && album.image ? (
           <img
-            src={getImageUrl(album.image)}
+            src={getImageUrl(album.image, album.imageUpdatedAt)}
             alt={album.title}
             onError={() => setImageError(true)}
             className="w-full h-full object-cover"

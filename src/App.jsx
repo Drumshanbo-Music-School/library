@@ -9,6 +9,7 @@ import BookDetail from './components/BookDetail'
 import ViewToggle from './components/ViewToggle'
 import ScrollModeToggle from './components/ScrollModeToggle'
 import LoginPage from './components/admin/LoginPage'
+import ResetPasswordPage from './components/admin/ResetPasswordPage'
 import ReviewPage from './components/admin/ReviewPage'
 import EditForm from './components/admin/EditForm'
 import { useCatalog, useFilterOptions } from './lib/hooks/useCatalog'
@@ -493,6 +494,7 @@ function App() {
     <Routes>
       <Route path="/" element={<CatalogPage />} />
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/reset-password" element={<ResetPasswordPage />} />
       <Route path="/review" element={<ReviewPage />} />
     </Routes>
   )

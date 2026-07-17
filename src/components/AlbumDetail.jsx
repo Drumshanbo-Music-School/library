@@ -33,22 +33,20 @@ export default function AlbumDetail({ album, onClose, onFilterClick, onEdit }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center sm:p-4 bg-black/50 backdrop-blur-sm"
+      className="fixed inset-0 z-50 sm:flex sm:items-center sm:justify-center sm:p-4 sm:bg-black/50 sm:backdrop-blur-sm"
       onClick={handleBackdropClick}
     >
       <div
-        className="w-full sm:max-w-4xl max-h-[95vh] sm:max-h-[90vh] overflow-y-auto rounded-t-2xl sm:rounded-xl shadow-2xl"
+        className="relative h-full w-full sm:h-auto sm:max-h-[90vh] sm:max-w-4xl sm:rounded-xl sm:shadow-2xl overflow-hidden"
         style={{ backgroundColor: 'var(--color-bg-card)' }}
       >
-        {/* Close Button & Edit Button */}
-        <div className="sticky top-4 float-right mr-4 flex gap-2 z-10">
+        {/* Floating buttons */}
+        <div className="fixed sm:absolute top-4 right-4 flex gap-2 z-10 drop-shadow-lg">
           {onEdit && (
             <button
               onClick={onEdit}
               className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
               style={{ backgroundColor: 'var(--color-secondary)', color: 'var(--color-text-inverse)' }}
-              onMouseEnter={(e) => e.target.style.backgroundColor = 'var(--color-primary)'}
-              onMouseLeave={(e) => e.target.style.backgroundColor = 'var(--color-secondary)'}
               title="Edit"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,7 +66,7 @@ export default function AlbumDetail({ album, onClose, onFilterClick, onEdit }) {
           </button>
         </div>
 
-        <div className="p-6 md:p-8">
+        <div className="h-full sm:max-h-[90vh] overflow-y-auto p-6 md:p-8">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Album Cover */}
             <div>
@@ -84,9 +82,9 @@ export default function AlbumDetail({ album, onClose, onFilterClick, onEdit }) {
                   {/* Front - Album Cover */}
                   <div className="flip-card-front">
                     <div className="aspect-square bg-gradient-to-br from-slate-200 to-slate-300 rounded-lg overflow-hidden shadow-lg">
-                      {!imageError ? (
+                      {!imageError && album.image ? (
                         <img
-                          src={getImageUrl(album.image)}
+                          src={getImageUrl(album.image, album.imageUpdatedAt)}
                           alt={album.title}
                           onError={() => setImageError(true)}
                           className="w-full h-full object-cover"
@@ -118,12 +116,27 @@ export default function AlbumDetail({ album, onClose, onFilterClick, onEdit }) {
                         className="aspect-square rounded-lg shadow-lg p-4 sm:p-6 overflow-y-auto"
                         style={{ backgroundColor: 'var(--color-bg-card)' }}
                       >
-                        <h3
-                          className="text-lg font-bold mb-4"
-                          style={{ color: 'var(--color-text)' }}
-                        >
-                          Track List
-                        </h3>
+                        <div className="flex items-center justify-between mb-4">
+                          <h3
+                            className="text-lg font-bold"
+                            style={{ color: 'var(--color-text)' }}
+                          >
+                            Track List
+                          </h3>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation()
+                              setIsFlipped(false)
+                            }}
+                            className="w-8 h-8 rounded-full flex items-center justify-center transition-colors"
+                            style={{ backgroundColor: 'var(--color-neutral-light)', color: 'var(--color-text-muted)' }}
+                            title="Show album cover"
+                          >
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                          </button>
+                        </div>
                         <ol className="space-y-1">
                           {album.trackList.map((track, idx) => (
                             <li key={idx} className="text-sm">

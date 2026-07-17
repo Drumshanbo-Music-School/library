@@ -26,7 +26,7 @@ export default function BookListItem({ book, onClick, onFilterClick }) {
     >
       {/* Cover Image */}
       <div className="list-cover-md">
-        {!imageError ? (
+        {!imageError && book.image ? (
           <img
             src={getImageUrl(book.image)}
             alt={book.title}
@@ -47,7 +47,11 @@ export default function BookListItem({ book, onClick, onFilterClick }) {
           <h3 className="font-semibold text-sm md:text-base text-slate-900 truncate">
             {book.title}
           </h3>
-          <p className="text-xs text-slate-500 truncate">{book.publisher}</p>
+          {/* Authors on mobile, Publisher on desktop */}
+          <p className="text-xs text-slate-500 truncate md:hidden">
+            {book.authors && book.authors.length > 0 ? book.authors.join(', ') : 'Unknown Author'}
+          </p>
+          <p className="text-xs text-slate-500 truncate hidden md:block">{book.publisher}</p>
           <p className="text-xs text-slate-400">
             {book.pageCount && `${book.pageCount} pages`}
             {book.pageCount && book.format && ' • '}

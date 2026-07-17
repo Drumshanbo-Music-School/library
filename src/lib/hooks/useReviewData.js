@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { supabase } from '../supabase'
 import { calculateIssueCounts, getDetectorForIssue } from '../issueDetectors'
-import { getImageUrl } from '../storage'
 
 /**
  * Transform DB format (snake_case) to UI format (camelCase)
@@ -26,61 +25,6 @@ function transformFromDbFormat(item, type) {
     contentType: content_type,
     type: type
   }
-}
-
-/**
- * Validate if an image can be loaded
- * Returns a promise that resolves to true if image loads, false otherwise
- */
-function validateImage(imageUrl) {
-  return new Promise((resolve) => {
-    if (!imageUrl) {
-      resolve(false)
-      return
-    }
-
-    const img = new Image()
-
-    // Set a timeout to avoid hanging
-    const timeout = setTimeout(() => {
-      resolve(false)
-    }, 5000)
-
-    img.onload = () => {
-      clearTimeout(timeout)
-      // Check if image has valid dimensions (not a 0-byte placeholder)
-      if (img.width > 0 && img.height > 0) {
-        resolve(true)
-      } else {
-        resolve(false)
-      }
-    }
-
-    img.onerror = () => {
-      clearTimeout(timeout)
-      resolve(false)
-    }
-
-    img.src = imageUrl
-  })
-}
-
-/**
- * Validate images for all items
- * Adds hasValidImage flag to each item
- */
-async function validateAllImages(items) {
-  const validationPromises = items.map(async (item) => {
-    if (!item.image || item.image.trim() === '') {
-      return { ...item, hasValidImage: false }
-    }
-
-    const imageUrl = getImageUrl(item.image)
-    const isValid = await validateImage(imageUrl)
-    return { ...item, hasValidImage: isValid }
-  })
-
-  return Promise.all(validationPromises)
 }
 
 /**
@@ -116,13 +60,10 @@ export function useReviewData() {
 
       const allCatalogItems = [...cdItems, ...bookItems]
 
-      // Validate images for all items
-      const itemsWithValidation = await validateAllImages(allCatalogItems)
-
       // Calculate issue counts
-      const counts = calculateIssueCounts(itemsWithValidation)
+      const counts = calculateIssueCounts(allCatalogItems)
 
-      setAllItems(itemsWithValidation)
+      setAllItems(allCatalogItems)
       setIssueCounts(counts)
     } catch (err) {
       console.error('Error fetching review data:', err)

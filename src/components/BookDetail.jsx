@@ -25,16 +25,20 @@ export default function BookDetail({ book, onClose, onFilterClick, onEdit }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+      className="fixed inset-0 z-50 sm:flex sm:items-center sm:justify-center sm:p-4 sm:bg-black/50 sm:backdrop-blur-sm"
       onClick={handleBackdropClick}
     >
-      <div className="bg-white rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-        {/* Close & Edit buttons */}
-        <div className="absolute top-6 right-6 flex gap-2 z-10">
+      <div
+        className="relative h-full w-full sm:h-auto sm:max-h-[90vh] sm:max-w-4xl sm:rounded-xl sm:shadow-2xl overflow-hidden"
+        style={{ backgroundColor: 'var(--color-bg-card)' }}
+      >
+        {/* Floating buttons */}
+        <div className="fixed sm:absolute top-4 right-4 flex gap-2 z-10 drop-shadow-lg">
           {onEdit && (
             <button
               onClick={onEdit}
-              className="w-10 h-10 rounded-full bg-irish-green hover:bg-green-700 flex items-center justify-center text-white"
+              className="w-10 h-10 rounded-full flex items-center justify-center transition-colors"
+              style={{ backgroundColor: 'var(--color-secondary)', color: 'var(--color-text-inverse)' }}
               title="Edit"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -44,21 +48,22 @@ export default function BookDetail({ book, onClose, onFilterClick, onEdit }) {
           )}
           <button
             onClick={onClose}
-            className="w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-2xl text-slate-600 hover:text-slate-900"
+            className="w-10 h-10 rounded-full flex items-center justify-center text-2xl transition-colors"
+            style={{ backgroundColor: 'var(--color-neutral-light)', color: 'var(--color-text-muted)' }}
             aria-label="Close"
           >
             ×
           </button>
         </div>
 
-        <div className="p-6 md:p-8">
+        <div className="h-full sm:max-h-[90vh] overflow-y-auto p-6 md:p-8">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Book Cover */}
             <div>
               <div className="aspect-[3/4] bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg overflow-hidden shadow-lg mb-6">
-                {!imageError ? (
+                {!imageError && book.image ? (
                   <img
-                    src={getImageUrl(book.image)}
+                    src={getImageUrl(book.image, book.imageUpdatedAt)}
                     alt={book.title}
                     onError={() => setImageError(true)}
                     className="w-full h-full object-cover"
@@ -122,7 +127,10 @@ export default function BookDetail({ book, onClose, onFilterClick, onEdit }) {
 
             {/* Book Details */}
             <div>
-              <h2 className="text-3xl font-bold mb-2 font-serif text-slate-900">
+              <h2
+                className="text-2xl sm:text-3xl font-bold mb-2 font-serif"
+                style={{ color: 'var(--color-text)' }}
+              >
                 {book.title}
               </h2>
 

@@ -50,11 +50,36 @@ export function AuthProvider({ children }) {
     if (error) throw error
   }
 
+  /**
+   * Send password reset email
+   * @param {string} email
+   */
+  const resetPassword = async (email) => {
+    const redirectUrl = `${window.location.origin}${import.meta.env.BASE_URL}reset-password`
+    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: redirectUrl
+    })
+    if (error) throw error
+  }
+
+  /**
+   * Update password (after reset)
+   * @param {string} newPassword
+   */
+  const updatePassword = async (newPassword) => {
+    const { error } = await supabase.auth.updateUser({
+      password: newPassword
+    })
+    if (error) throw error
+  }
+
   const value = {
     user,
     loading,
     signIn,
     signOut,
+    resetPassword,
+    updatePassword,
     isAuthenticated: !!user
   }
 

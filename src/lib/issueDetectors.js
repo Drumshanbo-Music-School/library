@@ -8,7 +8,7 @@ export const ISSUE_TYPES = {
     label: 'Missing Image',
     icon: '🖼️',
     color: 'red',
-    detector: (item) => !item.hasValidImage,
+    detector: (item) => !item.image,
     appliesToCD: true,
     appliesToBook: true
   },

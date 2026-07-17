@@ -3,14 +3,19 @@ import { supabase } from './supabase'
 /**
  * Get the public URL for an image in the album-covers bucket
  * @param {string} filename - The image filename (e.g., 'cd-001.jpg')
+ * @param {number|string} [cacheKey] - Optional cache-busting key (e.g., imageUpdatedAt timestamp)
  * @returns {string|null} The public URL or null if no filename provided
  */
-export function getImageUrl(filename) {
+export function getImageUrl(filename, cacheKey) {
   if (!filename) return null
 
   const { data } = supabase.storage
     .from('album-covers')
     .getPublicUrl(filename)
+
+  if (cacheKey) {
+    return `${data.publicUrl}?v=${cacheKey}`
+  }
 
   return data.publicUrl
 }

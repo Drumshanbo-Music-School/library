@@ -145,8 +145,10 @@ export default function EditForm({ item, type = 'CD', onClose, onSave, onDelete 
     try {
       // Upload image if changed
       let imageName = formData.image
+      let imageUpdatedAt = formData.imageUpdatedAt
       if (imageFile) {
         imageName = `${formData.id}.jpg`
+        imageUpdatedAt = Date.now()
         await uploadImage(imageFile, imageName)
       }
 
@@ -158,6 +160,7 @@ export default function EditForm({ item, type = 'CD', onClose, onSave, onDelete 
         publisher: formData.publisher,
         year: formData.year,
         image: imageName,
+        imageUpdatedAt,
         format: formData.format,
         links: Object.fromEntries(
           Object.entries(formData.links).filter(([_, v]) => v)
@@ -235,24 +238,32 @@ export default function EditForm({ item, type = 'CD', onClose, onSave, onDelete 
   const isCD = type === 'CD'
 
   return (
-    <div className="fixed inset-0 bg-black/60 z-50 flex items-start justify-center overflow-y-auto py-8">
-      <div className="bg-white rounded-lg shadow-xl w-full max-w-3xl mx-4 my-auto relative">
-        <div className="flex items-center justify-between p-4 border-b">
-          <h2 className="text-xl font-bold">
-            {item ? 'Edit' : 'New'} {type}
-          </h2>
+    <div className="fixed inset-0 z-50 sm:flex sm:items-center sm:justify-center sm:p-4 sm:bg-black/60">
+      <div className="relative h-full w-full sm:h-auto sm:max-h-[90vh] sm:max-w-3xl bg-white sm:rounded-lg sm:shadow-xl overflow-hidden">
+        {/* Floating close button */}
+        <div className="fixed sm:absolute top-4 right-4 z-10 drop-shadow-lg">
           <button
+            type="button"
             onClick={onClose}
-            className="text-slate-400 hover:text-slate-600 text-2xl"
+            className="w-10 h-10 rounded-full flex items-center justify-center text-2xl transition-colors"
+            style={{ backgroundColor: 'var(--color-neutral-light)', color: 'var(--color-text-muted)' }}
           >
             &times;
           </button>
         </div>
 
-        <form onSubmit={handleSubmit}>
-          <div className="p-6 space-y-6 max-h-[70vh] overflow-y-auto">
+        <form onSubmit={handleSubmit} className="h-full sm:max-h-[90vh] flex flex-col overflow-hidden">
+          <div className="flex-1 overflow-y-auto overflow-x-hidden">
+            {/* Header - scrolls with content */}
+            <div className="p-4 border-b">
+              <h2 className="text-xl font-bold">
+                {item ? 'Edit' : 'New'} {type}
+              </h2>
+            </div>
+
+            <div className="p-6 space-y-6">
           {/* Basic Info */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-slate-700 mb-1">ID</label>
               <input
@@ -341,7 +352,7 @@ export default function EditForm({ item, type = 'CD', onClose, onSave, onDelete 
           {/* CD-specific fields */}
           {isCD && (
             <>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-1">Tracks</label>
                   <input
@@ -372,7 +383,7 @@ export default function EditForm({ item, type = 'CD', onClose, onSave, onDelete 
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-1">Catalog Number</label>
                   <input
@@ -478,7 +489,7 @@ export default function EditForm({ item, type = 'CD', onClose, onSave, onDelete 
                 onRemove={(i) => removeFromArray('authors', i)}
               />
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-1">ISBN</label>
                   <input
@@ -499,7 +510,7 @@ export default function EditForm({ item, type = 'CD', onClose, onSave, onDelete 
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-1">Page Count</label>
                   <input
@@ -530,7 +541,7 @@ export default function EditForm({ item, type = 'CD', onClose, onSave, onDelete 
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-1">Language</label>
                   <input
@@ -617,9 +628,10 @@ export default function EditForm({ item, type = 'CD', onClose, onSave, onDelete 
               </div>
             </>
           )}
+            </div>
           </div>
 
-          <div className="flex justify-between items-center p-4 border-t bg-slate-50">
+          <div className="flex justify-between items-center p-4 border-t bg-slate-50 shrink-0">
             {/* Delete button - only show when editing existing item */}
             {item ? (
               <button
@@ -653,7 +665,7 @@ export default function EditForm({ item, type = 'CD', onClose, onSave, onDelete 
 
         {/* Delete Confirmation Dialog */}
         {showDeleteConfirm && (
-          <div className="absolute inset-0 bg-black/50 flex items-center justify-center rounded-lg">
+          <div className="absolute inset-0 bg-black/50 flex items-center justify-center sm:rounded-lg">
             <div className="bg-white rounded-lg p-6 m-4 max-w-sm shadow-xl">
               <h3 className="text-lg font-semibold mb-2">Confirm Delete</h3>
               <p className="text-slate-600 mb-4">

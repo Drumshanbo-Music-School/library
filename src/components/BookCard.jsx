@@ -11,9 +11,9 @@ export default function BookCard({ book, onClick, onFilterClick }) {
     >
       {/* Book Cover - Portrait aspect ratio (3:4) */}
       <div className="aspect-[3/4] bg-gradient-to-br from-amber-50 to-amber-100 relative overflow-hidden">
-        {!imageError ? (
+        {!imageError && book.image ? (
           <img
-            src={getImageUrl(book.image)}
+            src={getImageUrl(book.image, book.imageUpdatedAt)}
             alt={book.title}
             onError={() => setImageError(true)}
             className="w-full h-full object-cover"

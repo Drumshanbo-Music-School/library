@@ -21,9 +21,9 @@ export default function AlbumListItem({ album, onClick, onFilterClick }) {
     >
       {/* Cover Image */}
       <div className="list-cover-md">
-        {!imageError ? (
+        {!imageError && album.image ? (
           <img
-            src={getImageUrl(album.image)}
+            src={getImageUrl(album.image, album.imageUpdatedAt)}
             alt={album.title}
             onError={() => setImageError(true)}
             className="w-full h-full object-cover"
@@ -42,7 +42,11 @@ export default function AlbumListItem({ album, onClick, onFilterClick }) {
           <h3 className="font-semibold text-sm md:text-base text-slate-900 truncate">
             {album.title}
           </h3>
-          <p className="text-xs text-slate-500 truncate">{album.publisher}</p>
+          {/* Artists on mobile, Publisher on desktop */}
+          <p className="text-xs text-slate-500 truncate md:hidden">
+            {album.artists.join(', ')}
+          </p>
+          <p className="text-xs text-slate-500 truncate hidden md:block">{album.publisher}</p>
           <p className="text-xs text-slate-400">
             {album.trackCount && `${album.trackCount} tracks`}
             {album.trackCount && album.runtime && ' • '}
